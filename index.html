@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0;">
+    <title>大创小岗村</title>
+    <link rel="stylesheet" href="/css/index.css" >	
+    <link rel="shortcut icon" href="校徽.png">
+    
+</head>
+<style>                                   
+*
+{   margin:0px;
+    padding:0px;
+}
+body{
+    background:#518d4f url("小岗村大图.jpg") top center no-repeat; 
+    font-family:"微软雅黑","宋体";
+}
+img{border:0;}
+a{ text-decoration:none;}
+li{ list-style:none;}
+
+#top{width:100%;height:50px;overflow:hidden; background:#518d4f;}
+#top .a_box{width:1000px;height:50px;margin:0px auto;}
+#top .a_box .topic_tit{width:152px;height:30px;float:left;display:inline;margin-top:10px;}
+#top .a_box .topmenu{width:auto;height:50px;float:left;
+padding-left: 130px;}
+#top .a_box .topmenu a{width:auto;height:50px;padding-left:8px;padding-right:8px;font-size:12px;color:#333;line-height:50px; font-family:"微软雅黑", "宋体";display:inline-block;float:left;text-decoration:none;}
+#top .a_box .topmenu a:hover{ background:#ca4a3d;color:#fff;}
+#top .a_box .topmenu #hudong{    }
+#top .a_box .topmenu button{background-color: #518d4f;border-style: none;}
+
+
+#banner{width:1000px;height:550px;margin:0px auto;position:relative;}
+#banner .leadword{width:935px;height:75px;position:absolute;right:10px;bottom:12px;}
+#banner .leadword p{font-size:14px;color:#000;line-height:25px; text-indent:2em;}
+
+#content_a{width:1000px;overflow:hidden;margin:0px auto;margin-top:40px;}
+#content_a .navtit{width:1000px;height:80px;border-bottom:#f8f6e5 1px solid;}
+#content_a .navintro{width:1000px;overflow:hidden;margin-top:20px;}
+#content_a .navintro p{ font-size:14px;color:#fff;line-height:21px; text-indent:2em;}
+#content_a .navlist{width:1000px;overflow:hidden;margin-top:20px;}
+#content_a .navlist ul{width:1020px;}
+#content_a .navlist ul li{width:320px;height:340px;float:left;display:inline;overflow:hidden;margin-right:20px;margin-bottom:20px; background:#41773f;}
+#content_a .navlist ul li .title{width:320px;height:30px;margin-top:10px; text-align:center;}
+#content_a .navlist ul li .title a{font-size:16px;color:#fff;line-height:30px;}
+#content_a .navlist ul li .title a:hover{text-decoration:underline;}
+#content_a .navlist ul li .imgbox{width:300px;height:200px;margin:0px auto;border:#fff 3px solid;}
+#content_a .navlist ul li p{padding:10px;font-size:12px;color:#fff;line-height:160%;}
+#content_a .navlist ul li p a{font-size:12px;color:#FF0;line-height:160%;}
+#content_a .navlist ul li p a:hover{ text-decoration:underline;}
+#content_a .navlist_b{width:1000px;height:350px;overflow:hidden;margin-top:10px;}
+#content_a .navlist_c{width:600px;height:400px;overflow:hidden;margin:0px auto;margin-top:20px;}
+
+#content_b{width:980px;overflow:hidden;margin:0px auto;margin-top:40px; background:#f6f4e4;padding:10px;}
+#content_b .navtit{width:980px;height:30px;border-bottom:#f8f6e5 1px solid;border-bottom:#333 1px solid;}
+#content_b .navtit h1{border-left:#c00 10px solid;padding-left:10px; font-size:24px;color:#333;line-height:30px;}
+
+#content_b .navmain{width:980px;height:px; overflow:hidden;margin-top:10px;}
+
+
+/*图片聚焦*/
+#d_tab29 ul,#d_tab29 li{margin:0;padding:0;list-style:none}
+#d_tab29 img{border:0;vertical-align:top}
+#d_tab29{position:relative; height:400px;background:url('img/bg3.jpg') no-repeat center 0;text-align:left}
+#d_tab29 .d_img{position:relative;margin:0 auto;width:1000px;height:100%} 
+#d_tab29 .d_img li{position:absolute;display:none;z-index:0}
+#d_tab29 .d_img li img{width:100%}
+#d_tab29 .d_img li.d_pos1{display:block;width:400px;left:0%;top:60px;z-index:1}
+#d_tab29 .d_img li.d_pos2{display:block;width:450px;left:10%;top:40px;z-index:2}
+#d_tab29 .d_img li.d_pos3{display:block;width:500px;left:25%;top:20px;z-index:3}
+#d_tab29 .d_img li.d_pos4{display:block;width:450px;right:10%;top:40px;z-index:2}
+#d_tab29 .d_img li.d_pos5{display:block;width:400px;right:0%;top:60px;z-index:1}
+#d_tab29 .d_menu{position:absolute;bottom:20px;width:100%;text-align:center}
+#d_tab29 .d_menu li{display:inline-block;zoom:1;*display:inline;background:url('img/btn.png') no-repeat 0 0;width:12px;height:12px;cursor:pointer;margin-right:3px}
+#d_tab29 .d_menu li.d_select{background:url('img/btn.png') no-repeat 0 -18px}
+#d_tab29 .d_next{position:absolute;left:50%;margin-left:445px;top:140px;z-index:10;cursor:pointer}
+#d_tab29 .d_prev{position:absolute;left:50%;margin-left:-500px;top:140px;z-index:10;cursor:pointer}
+
+/*图片聚焦*/
+#focus{width:600px;height:400px;overflow:hidden; position:relative;}
+#focus ul,li {list-style:none;margin:0px;padding:0px;}
+#focus ul{height:400px;position:absolute;}
+#focus ul li{float:left;width:600px;height:400px;overflow:hidden;position:relative;}
+#focus ul li div{position:absolute;overflow:hidden;}
+#focus ul li .box dl.txt dd.intro p a:hover{ text-decoration:underline;}
+#focus .btnBg{position:absolute;width:950px;height:20px;left:0;bottom:0;}
+#focus .btn {position:absolute; width:950px;height:10px;padding:5px 10px;right:0;bottom:0;text-align:right;}
+#focus .btn span{display:inline-block;_display:inline;_zoom:1;width:25px;height:10px;_font-size:0;margin-left:5px;cursor:pointer;}
+#focus .btn span.on{background:none;}
+#focus .preNext{width:45px;height:100px;position:absolute;top:150px;background:url(http://images.wenming.cn/web_ahhf/images/sprite.png) no-repeat 0 0; cursor:pointer;}
+#focus .pre{left:0;}
+#focus .next{right:0;background-position:right top;}
+/*图片聚焦*/
+
+#bottom{width:100%;height:200px;padding-top:40px;text-align:center;overflow:hidden;}
+#bottom p{font-size:12px;color:#fff;line-height:25px; font-family:"微软雅黑", "宋体";}
+</style>
+
+
+<body>
+    <!--专题通用头部-->
+    <div id="top">
+      <div class="a_box">
+         <dl class="topic_tit">
+          <a href="http://chz.wenming.cn" target="_blank"><img src="财大标志.png" width="152" height="25" /></a>
+         </dl>
+         <dl class="topmenu">
+          <a href="https://cxcygl.jxufe.edu.cn/">江西财经大学创新创业项目</a>
+          <a href="http://chz.wenming.cn/jjcz/" target="_blank">讲好小岗村故事</a>
+          <a href="http://chz.wenming.cn/wmbb/" target="_blank">互动视频简介</a>
+          <a href="http://chz.wenming.cn/cscj/" target="_blank">走近历史</a> 
+          <button id="jump"><a href="https://www.kdocs.cn/l/chi35wbMTHMq" target="_blank" >互动视频</a></button>
+          <a href="https://docs.qq.com/form/page/DTWRnak9NTGlsWFdh?create_type=2&from_page=doc_list_new_form&templateId=25000&u=4aeabf6164634da3a2b3936682c5f938#/fill" target="_blank">二创投稿</a> 
+		  
+        </dl>
+      </div>
+    </div>
+    <!--专题通用头部-->
+    
+    <!--banner 开始-->
+    <div id="banner">
+      <div class="leadword">
+          <p>1978年12月的一个寒夜，凤阳县小岗村18位农民以“托孤”的方式按下红手印，拉开了中国改革开放的序幕。2004年，时代先锋、优秀共产党员、模范基层干部沈浩同志到小岗村任党支部第一书记，带领村民进行新的创业，小岗村获得了又一次飞跃式的发展。三十年来，小岗人始终发扬“敢为人先”的精神，不断探索，勇于创新，用勤劳的双手建设着美好的家园。</p>
+       </div>
+    </div>
+    <!--banner 结束-->
+    
+    <!--第一部分 开始-->
+    <div id="content_a">
+       <div class="navtit"><img src="20141126_xgc_tit01.png" width="1000" height="80" /></div>
+       <div class="navintro">
+         <p>1978年冬夜，小岗村冒着巨大风险，率先包产到户，轰轰烈烈的大包干开始了。“一年翻身，改变面貌”，小岗村，迈出了中国巨变的第一步！</p>
+         <p>大包干后，中国在农村改革成功的基础上，开始了以城市为重点的全面经济体制改革，综合国力不断增强，世界影响力连年攀升，中国现代化的进程从此步入了历史快车道。</p>
+         <p>三十多年来，中央、省、市、县各级党委政府对小岗的发展十分关心和支持，各级领导多次到小岗视察工作。</p>
+         <p>小岗村，携着上级领导的殷切关怀，汇聚着全中国关注的目光，高举改革创新的大旗，奋勇向前，谱写出一曲曲新时代的动人乐章。</p>
+       </div>
+       <div class="navlist">
+          <ul>
+            <li>
+                <div class="title"><h2><a href="https://tv.cctv.com/2014/10/12/VIDE1413073980247277.shtml" target="_blank">新中国成就档案：家庭联产承包责任制</a></h2></div>
+                <div class="imgbox"><img src="20141126_xgc_001.jpg" width="300" height="200" /></div>
+                <p>这是安徽省凤阳县小岗村18位农民按下红手印的“包产到户”契约（资料照片）。家庭联产承包责任制是中国农民的伟大创造。<a href="https://baijiahao.baidu.com/s?id=1699701606065427767" target="_blank">详细</a></p>
+             </li>
+            <li>
+                <div class="title"><h2><a href="http://news.sina.com.cn/c/2008-02-15/152114945902.shtml" target="_blank">小岗村农民大包干后摸索通向富裕道路</a></h2></div>
+                <div class="imgbox"><img src="20141126_xgc_002.jpg" width="300" height="200" /></div>
+                <p>尽管自然条件并无优势，但小岗人多年来从没停止过向富裕路的摸索，他们骨子里，是有着一股求变、敢为人先的基因的。况且，小岗村“中国改革开放第一村”的身份，也为他们的发展带来不少机遇。<a href="http://news.sina.com.cn/c/2008-02-15/152114945902.shtml" target="_blank">详细</a></p>
+             </li>
+             <li>
+                <div class="title"><h2><a href="https://www.thepaper.cn/newsDetail_forward_14424480" target="_blank">“大包干”带头人</a></h2></div>
+                <div class="imgbox"><img src="20141126_xgc_003.jpg" width="300" height="200" /></div>
+                <p>这18位被称为“大包干”带头人的农民是：关延珠、严立富、严立华、严立坤、严金昌、严家芝、严学昌、严立学、严俊昌、严美昌、严宏昌、严付昌、严家其、严国品、关友生、关友章、关友江、韩国云。<a href="https://www.thepaper.cn/newsDetail_forward_14424480" target="_blank">详细</a></p>
+             </li>
+            <li>
+                <div class="title"><h2><a href="http://ah.anhuinews.com/system/2008/11/03/002148264.shtml" target="_blank">江泽民总书记来到小岗村</a></h2></div>
+                <div class="imgbox"><img src="20141126_xgc_004.jpg" width="300" height="200" /></div>
+                <p>1998年，江泽民总书记在视察安徽凤阳小岗村时指出，以家庭承包经营为基础的双层经营体制，是党的农村政策的基石，这一政策要长期坚持下去，是不会改变的。土地承包关系“30年不变，30年后更没有必要变”。<a href="http://ah.anhuinews.com/system/2008/11/03/002148264.shtml" target="_blank">详细</a></p>
+            </li>
+            <li>
+                <div class="title"><h2><a href="http://news.xinhuanet.com/newscenter/2008-10/01/content_10137008.htm" target="_blank">胡锦涛总书记在安徽农村考察纪实</a></h2></div>
+                <div class="imgbox"><img src="20141126_xgc_005.jpg" width="300" height="200" /></div>
+                <p>9月30日，中共中央总书记、国家主席、中央军委主席胡锦涛到安徽农村考察。这是胡锦涛在滁州市凤阳县小岗村村民关友江家院子里同村民们亲切交谈，共商农村改革发展大计。<a href="http://news.xinhuanet.com/newscenter/2008-10/01/content_10137008.htm" target="_blank">详细</a></p>
+            </li>
+            <li>
+                <div class="title"><h2><a href="http://news.xinhuanet.com/photo/2008-10/14/content_10194741.htm" target="_blank">小岗村的民生变迁</a></h2></div>
+                <div class="imgbox"><img src="20141126_xgc_006.jpg" width="300" height="200" /></div>
+                <p>近年来，在新农村建设中，小岗村重振改革创新的“大包干”精神，根据自身特点，开始探索发展多种形式的土地规模经营，探索出了一条“现代农业——旅游产业——工农业协调发展”改革致富之路。<a href="http://news.xinhuanet.com/photo/2008-10/14/content_10194741.htm" target="_blank">详细</a></p>
+            </li>
+          </ul>
+       </div>
+    </div>
+    <!--第一部分 结束-->
+    
+    <!--第二部分 开始-->
+    <div id="content_a">
+       <div class="navtit"><img src="20141126_xgc_tit02.png" width="1000" height="80" /></div>
+       <div class="navintro">
+          <p>2004年2月，小岗人迎来了他们的第一书记——沈浩同志。</p>
+          <p>作为小岗崛起的引路人，沈浩书记带领着小岗人，确定了“开发现代农业、发展旅游业、招商引资发展村级工业”的“三步走”发展战略，一步一个脚印，踏出了属于小岗特色的发展之路。</p>
+          <p>2006年11月，第一个三年任期届满，98颗红手印留住了沈浩，留住了小岗人渴盼未来的希望；2009年9月，第二个三年任期即将结束时，186颗红手印再次留住沈浩，留住了小岗人奔向未来的梦。他以忠诚和大爱，以创新和奋斗，以青春和生命，抒写了当代中国农村优秀基层干部的先进事迹和崇高精神。</p>
+          <p>然而，誓言永远为小岗奉献的沈浩书记，却因为积劳成疾，病逝在自己的工作岗位上。历史定格在了2009年11月7日，这一天，小岗人印下第三纸红手印，要永远地留下书记的忠诚灵魂。小岗村永远铭记着沈浩书记，沈浩也看到了小岗人天高地厚的深情。</p>
+       </div>
+       <div class="navlist">
+          <ul>
+             <li>
+                <div class="title"><h2><a href="http://ah.anhuinews.com/system/2010/08/26/003342396.shtml" target="_blank">沈浩留在小岗村的身影</a></h2></div>
+                <div class="imgbox"><img src="20141126_xgc_007.jpg" width="300" height="200" /></div>
+                <p>他立党为公、执政为民，与人民群众同呼吸、共命运、心连心，带领乡亲们求富裕、奔小康，奉献了青春，甚至生命。小岗人用红手印，表达了对这位“第一书记”的爱戴。<a href="#" target="_blank">详细</a></p>
+             </li>
+             <li>
+                <div class="title"><h2><a href="http://epaper.gmw.cn/gmrb/html/2014-04/16/nw.D110000gmrb_20140416_1-04.htm?div=-1" target="_blank">沈浩精神：一面高高飘扬的旗帜</a></h2></div>
+                <div class="imgbox"><img src="20141126_xgc_008.jpg" width="300" height="200" /></div>
+                <p>10年前，作为安徽省财政厅的选派干部，39岁的沈浩来到小岗村这片厚重的土地，担任村党支部第一书记。他用一腔热血激活了小岗村一潭春水，直至2009年11月6日，疲倦的沈浩睡下后再没有醒来……<a href="#" target="_blank">详细</a></p>
+             </li>
+             <li>
+                <div class="title"><h2><a href="http://old.12371.gov.cn/n92553c66.aspx" target="_blank">大力弘扬沈浩精神　深入推进创先争优</a></h2></div>
+                <div class="imgbox"><img src="20141126_xgc_009.jpg" width="300" height="200" /></div>
+                <p>党的好干部、深受小岗群众爱戴的好书记沈浩同志，离开我们已有一年时间。一年来，安徽各级党组织积极响应中央号召，认真开展向沈浩同志学习活动，追忆他的模范事迹，缅怀他的高尚品质。<a href="#" target="_blank">详细</a></p>
+             </li>
+          </ul>
+       </div>
+    </div>
+    <!--第二部分 结束-->
+    
+    <!--第三部分 开始-->
+    <div id="content_a">
+       <div class="navtit"><img src="20141126_xgc_tit03.png" width="1000" height="80" /></div>
+       <div class="navintro">
+          <p>按照 “现代农业的示范村、城乡统筹的先行村、制度创新的实验村、文明和谐的新农村”四型村战略目标，小岗村，正从深藏不露的山村巨变中大度走出，筑起一条创新跨越之路。</p>
+         <p>小岗村积极调整产业结构，发展现代农业，编制出《小岗村现代农业示范区规划》，通过实施土地流转和开展土地确权登记，在确保农户收益得到保障的基础上，对农村土地积极探索新模式经营和管理，发展现代化、集约化、规模化的高效农业。葡萄、大樱桃、蓝莓、黑豆等优质高产粮食作物遍地开花，现代化温室大棚、连体式大棚等设施农业蓬勃发展。</p>
+         <p>通过招商引资延伸农业产业化链条，发展农产品深加工业，宝迪10万头原种猪养殖基地落户小岗，构建从原种猪养殖、育肥、屠宰、肉食品加工和销售的产业链条。金小岗农林科技产业园迅速推进，中航郑飞小岗面业、GLG科技产业园等企业蓄势待发。</p>
+         <p>小岗村以“大包干”纪念馆和沈浩同志先进事迹陈列馆为依托，利用自身品牌优势，积极发展红色旅游、现代农业观光游和乡村风情游。</p>
+         <p>现在的小岗村，已成为一个拥有23个村民组，人口近4000人，占地2.25万亩的中心村。小岗，正成为投资兴业的热土，企业集聚的领地。</p>
+       </div>
+      <div class="navlist_b">
+          <div id="d_tab29">
+            <ul class="d_img">          
+                <li class="d_pos1"><a href="http://life.chuzhou.cn/vote/xuanshou_702.html" target="_blank"><img src="20141126_xgc_010.jpg" /></a></li>
+                <li class="d_pos2"><a href="http://life.chuzhou.cn/vote/xuanshou_702.html" target="_blank"><img src="20141126_xgc_011.jpg" /></a></li>
+                <li class="d_pos3"><a href="http://finance.people.com.cn/n/2014/0131/c1004-24271628.html" target="_blank"><img src="20141126_xgc_012.jpg" /></a></li>
+                <li class="d_pos4"><a href="http://www.chuzhou.cn/2013-11/25/content_504571.htm" target="_blank"><img src="20141126_xgc_013.jpg" /></a></li>
+                <li class="d_pos5"><a href="http://www.caijing.com.cn/2011-06-23/110754899.html" target="_blank"><img src="20141126_xgc_014.jpg" /></a></li>
+                <li><a href="http://www.fynews.gov.cn/html/2010-05/5201.html" target="_blank"><img src="20141126_xgc_015.jpg" /></a></li>
+                <li><a href="http://www.czxfw.gov.cn/view.aspx?id=67205" target="_blank"><img src="20141126_xgc_016.jpg" /></a></li>
+                <li><a href="http://www.czxfw.gov.cn/view.aspx?id=67205" target="_blank"><img src="20141126_xgc_017.jpg" /></a></li>
+                <li><a href="http://www1.wuhunews.cn/news/200807/125830.html" target="_blank"><img src="20141126_xgc_018.jpg" /></a></li>
+                <li><a href="http://www.fynews.gov.cn/html/2014-06/42034.html" target="_blank"><img src="20141126_xgc_019.jpg" /></a></li>
+                <li><a href="http://www.ah.xinhuanet.com/2013-06/23/c_116252885.htm" target="_blank"><img src="20141126_xgc_020.jpg" /></a></li>
+                <li><a href="http://news.xinhuanet.com/photo/2008-10/14/content_10194741_7.htm" target="_blank"><img src="20141126_xgc_021.jpg" /></a></li>
+            </ul>   
+            <p class="d_prev"><img src="20141126_xgc_prev.png" alt /></p>
+            <p class="d_next"><img src="20141126_xgc_next.png" alt /></p>
+        </div>
+      </div>
+       </div>
+    
+    </div>
+    <!--第三部分 结束-->
+    
+    <!--第四部分 开始-->
+    <div id="content_a">
+       <div class="navtit"><img src="20141126_xgc_tit04.png" width="1000" height="80" /></div>
+       <div class="navintro">
+          <p>经济繁荣、生活富裕、环境优美、民主和谐。小岗努力打造安徽省乃至中国的美好乡村示范村，高起点规划、高质量建设现代农业示范园，全力争创“全国干部教训培训基地”。</p>
+          <p>在建设宜居、宜业、宜游美好乡村的同时，小岗深入挖掘凤阳花鼓、杈拉机、钱杆子、花棍等民俗文化，以改革创新文化为重点、以地方民俗文化为补充，全面增强文化软实力。</p>
+          <p>小岗村在村两委引导、指导下，以村民理事会为主体，实现自我管理、自我服务、自我监督为核心的村民自治；建立在村党委领导下，以制度建设为主要内容，村企一体的现代管理与服务群众的新机制，努力构建民主、和谐、服务、共进的新型社会化关系。</p>
+          <p>小岗村站在新的历史起点上，以海纳百川的广阔胸襟面向未来，迎接机遇与挑战，全面建设富强、民主、文明、和谐的新小岗。</p>
+       </div>
+       <div class="navlist_c">
+          <div id="focus">
+             <ul>
+                <li><img src="20141126_xgc_022.jpg" /></li>
+                <li><img src="20141126_xgc_023.jpg" /></li>
+                <li><img src="20141126_xgc_024.jpg" /></li>
+                <li><img src="20141126_xgc_025.jpg" /></li>
+             </ul>
+          </div>
+       </div>
+       <div class="navlist">
+          <ul>
+             <li style="height:258px;">
+                <div class="title"><h2><a href="http://news.xinhuanet.com/misc/2009-12/14/content_12645059.htm" target="_blank">游客参观大包干纪念馆新馆</a></h2></div>
+                <div class="imgbox"><img src="20141126_xgc_026.jpg" width="300" height="200" /></div>
+             </li>
+             <li style="height:258px;">
+                <div class="title"><h2><a href="http://www.lafy.gov.cn/main.php?id=978" target="_blank">参观沈浩同志先进事迹陈列馆</a></h2></div>
+                <div class="imgbox"><img src="20141126_xgc_027.jpg" width="300" height="200" /></div>
+             </li>
+             <li style="height:258px;">
+                <div class="title"><h2><a href="http://ah.people.com.cn/n/2014/0814/c358266-21989786.html" target="_blank">“鼓乡情韵”戏下乡 文化服务零距离</a></h2></div>
+                <div class="imgbox"><img src="20141126_xgc_028.jpg" width="300" height="200" /></div>
+             </li>
+             <li style="height:258px;">
+                <div class="title"><h2><a href="http://www.chinadaily.com.cn/hqgj/jryw/2013-09-30/content_10237557.html" target="_blank">欢歌劲舞迎国庆</a></h2></div>
+                <div class="imgbox"><img src="20141126_xgc_029.jpg" width="300" height="200" /></div>
+             </li>
+             <li style="height:258px;">
+                <div class="title"><h2><a href="http://chz.wenming.cn/wmcz/201309/t20130928_840839.html" target="_blank">小岗村举办首届迎国庆篮球比赛</a></h2></div>
+                <div class="imgbox"><img src="20141126_xgc_030.jpg" width="300" height="200" /></div>
+             </li>
+             <li style="height:258px;">
+                <div class="title"><h2><a href="http://ah.anhuinews.com/qmt/system/2010/03/03/002690561.shtml" target="_blank">小岗村民俗表演闹元宵</a></h2></div>
+                <div class="imgbox"><img src="20141126_xgc_031.jpg" width="300" height="200" /></div>
+             </li>
+          </ul>
+       </div>
+    </div>
+    <!--第四部分 结束-->
+    
+    <!--第五部分 开始-->
+    <div id="content_b">
+       <div class="navtit"><h1>互动视频</h1></div>
+		<div class="navmain">
+         <a href="https://www.kdocs.cn/l/chi35wbMTHMq"> <img src="互动视频背景.jpg" width="980" height=auto ></a>
+		</div>
+       </div>
+    </div>
+    <!--第五部分 结束-->
+    
+    <!--结语 开始-->
+    <div id="content_a">
+       <div class="navtit"><img src="20141126_xgc_tit05.png" width="1000" height="80" /></div>
+       <div class="navintro">
+          <p>小岗人敢想、敢干、敢为人先的精神，以其鲜明的朝代特征，同延安精神、井冈山精神一样，成为中国最宝贵的精神财富，永远激励着人们奋勇前进！小岗人将继续弘扬大包干精神和沈浩精神，坚持与时俱进、着力发展、以人为本、促进和谐，坚定不移地沿着改革开放的伟大道路走下去，为全面建成小康社会而努力奋斗。(陈友田）</p>
+       </div>
+    </div>
+    <!--结语 结束-->
+    
+    <!--微话题-->
+    <div id="content_a">
+    <wb:comments url="auto" width="auto" ></wb:comments>
+    </div>
+    <!--微话题-->
+    
+    <!--bottom-->
+    <div id="bottom">
+       <div style="width:190px;margin:10px auto;">
+       <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_t163" data-cmd="t163" title="分享到网易微博"></a></div>
+       <p>江西财经大学</p>
+       <p>大学生创新创业项目</p>
+       <p>讲好小岗村故事</p>
+	   <p>传承小岗精神</p>
+       <p>联系我们：2202100329@stu.jxufe.edu.cn</p>
+    </div>
+    <!--bottom-->
+    </body>
+    
+</html>
+
+
+
